@@ -181,7 +181,7 @@ async def dify_webhook(request: Request):
             )
         except Exception as e:
             error_msg = f"Failed to push to GitHub: {str(e)}"
-            logger.error(error_msg)
+            logger.error(error_msg, exc_info=True)
             # Gitプッシュ失敗時も200を返すが、メッセージで通知
             return JSONResponse(
                 content={
