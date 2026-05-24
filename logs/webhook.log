@@ -368,3 +368,111 @@ Traceback (most recent call last):
     os.makedirs(app_backup_dir, exist_ok=True)
                              ^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:34:45,621 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:34:45,621 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:34:45,621 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:34:45,621 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:34:45,621 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:34:45,621 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:34:45,621 - webhook - INFO - Required directories are ready
+2026-05-24 22:34:45,621 - webhook - INFO - Required directories are ready
+2026-05-24 22:38:16,353 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:38:16,353 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:38:16,604 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:38:16,604 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:38:16,604 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:38:16,604 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:38:16,604 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:38:16,604 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:38:16,604 - webhook - INFO - Required directories are ready
+2026-05-24 22:38:16,604 - webhook - INFO - Required directories are ready
+2026-05-24 22:38:54,804 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:38:54,804 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:38:54,992 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:38:54,992 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:38:54,992 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:38:54,992 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:38:54,992 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:38:54,992 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:38:54,992 - webhook - INFO - Required directories are ready
+2026-05-24 22:38:54,992 - webhook - INFO - Required directories are ready
+2026-05-24 22:39:21,898 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:39:21,898 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:39:22,107 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:39:22,107 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:39:22,107 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:39:22,107 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:39:22,107 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:39:22,107 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:39:22,107 - webhook - INFO - Required directories are ready
+2026-05-24 22:39:22,107 - webhook - INFO - Required directories are ready
+2026-05-24 22:39:35,449 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:39:35,449 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 22:39:35,777 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:39:35.772984'}
+2026-05-24 22:39:35,777 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:39:35.772984'}
+2026-05-24 22:39:35,777 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:39:35,777 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:40:52,347 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:40:52.343136'}
+2026-05-24 22:40:52,347 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:40:52.343136'}
+2026-05-24 22:40:52,347 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:40:52,347 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:53:27,397 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:53:27.392649'}
+2026-05-24 22:53:27,397 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:53:27.392649'}
+2026-05-24 22:53:27,397 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:53:27,397 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:54:39,776 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:54:39.772427'}
+2026-05-24 22:54:39,776 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:54:39.772427'}
+2026-05-24 22:54:39,776 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+    logger.info(f"Created app backup directory: {app_backup_dir}")
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:54:39,776 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+    logger.info(f"Created app backup directory: {app_backup_dir}")
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:55:50,326 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:55:50.322811'}
+2026-05-24 22:55:50,326 - webhook - INFO - Received webhook request: {'app_name': 'test_app', 'user_name': 'test_user', 'dsl_data': {'version': '1.0', 'app': {'name': 'SampleApp', 'description': 'これはサンプルアプリケーションのDSL定義です。', 'version': '1.0.0'}, 'components': [{'type': 'page', 'name': 'HomePage', 'path': '/', 'elements': [{'type': 'header', 'text': 'ようこそ'}, {'type': 'button', 'text': '開始', 'action': 'navigate:/dashboard'}]}, {'type': 'page', 'name': 'Dashboard', 'path': '/dashboard', 'elements': [{'type': 'chart', 'title': '売上サマリー', 'data_source': 'api/sales'}]}], 'api': {'endpoints': [{'path': '/api/sales', 'method': 'GET', 'response': {'type': 'object', 'properties': {'sales': {'type': 'array', 'items': {'type': 'object', 'properties': {'date': {'type': 'string', 'format': 'date'}, 'amount': {'type': 'number'}}}}}}}]}}, 'timestamp': '2026-05-24T22:55:50.322811'}
+2026-05-24 22:55:50,326 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+    os.makedirs(app_backup_dir, exist_ok=True)
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:55:50,326 - webhook - ERROR - Unexpected error in webhook handler: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+Traceback (most recent call last):
+  File "/Users/shunsukeiwase/AIkanli/main.py", line 118, in dify_webhook
+    os.makedirs(app_backup_dir, exist_ok=True)
+                         ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/shunsukeiwase/AIkanli/backups/test_app'
+2026-05-24 22:59:41,921 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:59:41,921 - webhook - INFO - Starting up AIkanli webhook server...
+2026-05-24 22:59:41,921 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:59:41,921 - webhook - INFO - Backup directory: /Users/shunsukeiwase/AIkanli/backups
+2026-05-24 22:59:41,922 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:59:41,922 - webhook - INFO - Log file: /Users/shunsukeiwase/AIkanli/logs/webhook.log
+2026-05-24 22:59:41,922 - webhook - INFO - Required directories are ready
+2026-05-24 22:59:41,922 - webhook - INFO - Required directories are ready
+2026-05-24 23:05:39,409 - webhook - INFO - Shutting down AIkanli webhook server...
+2026-05-24 23:05:39,409 - webhook - INFO - Shutting down AIkanli webhook server...

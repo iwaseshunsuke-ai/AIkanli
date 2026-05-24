@@ -13,10 +13,9 @@ import json
 from typing import Dict, Any
 
 # ロギングの設定
-log_dir = os.path.join(settings.BASE_DIR, "logs")
-
-# ログファイルの設定（ローテーション付き）
-log_file = os.path.join(log_dir, "webhook.log")
+log_dir = os.path.abspath(os.path.join(settings.BASE_DIR, "logs"))
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.abspath(os.path.join(log_dir, "webhook.log"))
 handler = logging.handlers.RotatingFileHandler(
     log_file, maxBytes=10 * 1024 * 1024, backupCount=5
 )
@@ -30,7 +29,7 @@ logger.addHandler(handler)
 app = FastAPI(title=settings.APP_NAME)
 
 # バックアップディレクトリの設定
-BACKUP_DIR = os.path.join(settings.BASE_DIR, "backups")
+BACKUP_DIR = os.path.abspath(os.path.join(settings.BASE_DIR, "backups"))
 
 
 def generate_diff(
@@ -75,7 +74,7 @@ def generate_diff(
 
 
 # ログファイルの設定（ローテーション付き）
-log_file = os.path.join(log_dir, "webhook.log")
+log_file = os.path.abspath(os.path.join(log_dir, "webhook.log"))
 handler = logging.handlers.RotatingFileHandler(
     log_file, maxBytes=10 * 1024 * 1024, backupCount=5
 )
@@ -89,7 +88,7 @@ logger.addHandler(handler)
 app = FastAPI(title=settings.APP_NAME)
 
 # バックアップディレクトリの設定
-BACKUP_DIR = os.path.join(settings.BASE_DIR, "backups")
+BACKUP_DIR = os.path.abspath(os.path.join(settings.BASE_DIR, "backups"))
 
 
 @app.post("/webhook/dify")
@@ -115,7 +114,14 @@ async def dify_webhook(request: Request):
 
         # バックアップディレクトリの作成
         app_backup_dir = os.path.join(BACKUP_DIR, app_name)
-        os.makedirs(app_backup_dir, exist_ok=True)
+        try:
+            os.makedirs(app_backup_dir, exist_ok=True)
+            logger.info(f"Created app backup directory: {app_backup_dir}")
+        except Exception as e:
+            logger.error(
+                f"Failed to create app backup directory: {app_backup_dir}, error: {str(e)}"
+            )
+            raise
 
         # アプリ名に対応する最新のYAMLファイルを取得
         yaml_files = []
@@ -193,8 +199,13 @@ async def dify_webhook(request: Request):
             )
 
     except Exception as e:
+        import traceback
+
         error_msg = f"Unexpected error in webhook handler: {str(e)}"
         logger.error(error_msg, exc_info=True)
+        # エラーの全スタックトレースをログと標準出力に表示
+        logger.error("Full traceback:\n" + traceback.format_exc())
+        print("ERROR in webhook handler:", traceback.format_exc())
         raise HTTPException(status_code=500, detail="Internal server error")
 
 
